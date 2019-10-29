@@ -1,6 +1,9 @@
 pipeline {
     agent any
     stages {
+        stage ('Initialize'){
+           echo "PATH =${PATH}"
+        }
         stage ('Build Servlet Project') {
             steps {
                 /*For windows machine */
