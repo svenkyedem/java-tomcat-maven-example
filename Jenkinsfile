@@ -2,7 +2,7 @@ pipeline {
     agent any
     stages {
         stage ('Initialize'){
-           echo "PATH =${PATH}"
+           echo "Initializing build"
         }
         stage ('Build Servlet Project') {
             steps {
